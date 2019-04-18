@@ -1,0 +1,192 @@
+/**quan.wxss**/
+.quan_container{
+  width: 100%;
+  border: 1rpx solid none;
+  margin: 0 auto;
+  background: rgba(169, 169, 169, 0.3);
+  position: absolute;
+}
+.megssage{
+  width: 100%;
+  height: 100%;
+  border: 1rpx solid npne;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 99;
+  background: rgba(89, 84, 85, 0.2);
+}
+.userinfo, .uploader, .tunnel {
+  margin-top: 40rpx;
+  height: 140rpx;
+  width: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.userinfo-avatar {
+  height: 30%;
+  width:  17%;
+  border-radius: 50%;
+  margin-left: 42.5%;
+  margin-top: 60rpx;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-avatar:after {
+  border: none;
+}
+
+.user_name{
+  display: block;
+  text-align: center;
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+}
+.publish{
+  width: 20%;
+  display: block;
+  margin-top: 40rpx;
+  margin-left: 40%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #ffffff;
+  border-radius: 15rpx;
+  border: 1rpx solid #ffffff;
+}
+.chuang{
+  height: 400rpx;
+  width: 100%;
+  border: 1rpx solid none;
+  margin:0 auto;
+  position: relative;
+}
+ .pic{
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+.quan_box{
+  width:100%;
+  float: left;
+  margin-top: 20rpx;
+  z-index: 9999;
+  position: relative;
+  border: 1rpx solid none;
+}
+.quan_content{
+  height: 100%;
+  width: 100%;
+  border: 1rpx solid none;
+  margin:0 auto;
+}
+.message_1{
+  width: 100%;
+  background: #ffffff;
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  float: left;
+}
+.message{
+  height: 80rpx;
+  width: 100%;
+  float:left;
+  margin:20
+}
+.mpic_1{
+  height: 100%;
+  width: 80rpx;
+  border-radius: 50%;
+ float: left;
+}
+.m_name{
+  float: left;
+  display: inlne-block;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  font-weight: bold;
+  padding-left: 10rpx;
+}
+.m_content{
+  display: block;
+  width: 100%;
+  min-height: 50rpx;
+  font-size: 28rpx;
+  float: left;
+  /* padding-bottom: 10rpx; */
+  padding-top: 10rpx;
+  border: 1rpx solid none;
+}
+.m-pic{
+  width: 95%;
+  float: left;
+  margin-top: 15rpx;
+  border: 1rpx solid none;
+}
+.m-pic image{
+  /* height: 100%; */
+  width:70%;
+}
+.e_pic{
+  display: inline-block;
+  margin:10rpx 0 0 20rpx;
+  width: 180rpx;
+  height: 180rpx;
+  border: 1rpx solid none;
+
+}
+.m_tools{
+  float: left;
+  height: 70rpx;
+  width: 100%;
+}
+.time{
+  height: 50rpx;
+  width: 35%;
+  float: left;
+  color: #999;
+  line-height: 50rpx;
+  font-size: 25rpx;
+  border: 1rpx solid none;
+}
+.before,.after{
+  height: 40rpx;
+  width: 8%;
+  border: 1px solid none;
+ 
+}
+.before{
+  float: left;
+  margin-left: 33.5%;
+   border: 1px solid none;
+}
+.after{
+  float: right;
+  margin-right: 5%;
+   border: 1px solid none;
+}
+.zan_pic,.like,.zans_pic,.likes{
+  height: 45rpx;
+  width: 45rpx;
+}
+.comment-pic{
+   height: 50rpx;
+  width: 48rpx;
+  float: left;
+    border: 1px solid none;
+  margin-left: 0.8%;
+}
+.comment{
+ /* height: 100rpx; */
+ width: 100%;
+ border: 1rpx solid red;
+ float: left;
+
+}

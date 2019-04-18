@@ -1,0 +1,90 @@
+.publish_container{
+  width: 100%;
+  border: 1rpx solid none;
+  margin: 0 auto;
+}
+.publish_top{
+  height: 50rpx;
+  width: 100%;
+  margin: 0 auto;
+}
+.cancel{
+  float: left;
+  padding-left: 20rpx;
+}
+.cancel,.publish{
+  font-size: 30rpx;
+  color:#999999;
+  display: block;
+  width:15%;
+}
+.publish{
+  float: right;
+  text-align: center;
+  padding-right: 20rpx;
+  color: #fff;
+  background-color: #999;
+}
+.publish :active{
+  background-color: #1296db;
+  color: #fff;
+  padding: 10rpx;
+  border-radius:10rpx; 
+}
+.quanzi{
+  width: 15%;
+  display: block;
+  float: left;
+  margin-left: 27.5%;
+}
+.pics{
+  width: 100%;
+  margin: 0 auto;
+  border:1rpx solid none;
+}
+.getpic{
+  margin-left: 20rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border: 4rpx solid #D63014;
+  padding: 40rpx;
+  border-radius: 10rpx;
+}
+/* .getpic image{
+  height: 70%;
+  width: 70%;
+} */
+
+.pic1{
+  display: inline-block;
+  margin:10rpx 0 0 20rpx;
+  width: 180rpx;
+  height: 180rpx;
+  border: 1rpx solid none;
+  position: relative;
+} 
+.word{
+padding-top: 30rpx;
+  min-height: 250rpx;
+  max-height: 1000rpx;
+  width: 100%;
+  font-size: 30rpx;
+  border: 1rpx solid none;
+}
+.word textarea{
+  height: 100%;
+  width: 100%;
+}
+.deleteImg{
+  height: 50rpx;
+  margin:140rpx 0 0 -180rpx;
+  width: 180rpx; 
+  background-color:rgba(12, 12, 12, 0.5) ;
+  position: absolute;
+  z-index: 99;
+  text-align: center;
+  line-height: 50rpx;
+  color: #fff;
+  font-size: 27rpx;
+  display: inline-block;
+}

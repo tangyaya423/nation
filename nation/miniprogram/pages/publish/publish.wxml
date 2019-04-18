@@ -1,0 +1,22 @@
+<view class="publish_container">
+  <view class='publish_top'>
+    <text class='cancel'>取消</text>
+    <!-- <text class='quanzi' style='font-weight:bold;'>圈子</text> -->
+    <text class='publish' bindtap='publish'>发表</text>
+  </view>
+  <view class='public_middle'>
+  <form>
+    <textarea bindblur='getString' class='word' value='{{string}}' placeholder='写下你现在的想法~'></textarea>
+  </form>
+      <view class='pics'>
+        <block wx:for="{{getpic}}" wx:for-item="imgs" wx:for-index="idx" wx:key>
+            <image class='pic1' src="{{imgs}}" data-src="{{imgs}}" data-index="{{img_id}}"  bindtap='previewImage'></image>
+            <view class='deleteImg' data-index="{{img_id}}" bindtap='deleteImg'>删除</view>
+        </block>
+        <image class='getpic' src='/images/camera.png' bindtap='chooseImage'></image>
+      </view>
+  </view>
+  <!-- <view class='tools'>
+
+  </view> -->
+</view>

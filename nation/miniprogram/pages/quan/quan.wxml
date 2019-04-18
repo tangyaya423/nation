@@ -1,0 +1,50 @@
+<!--quan.wxml-->
+<view class='quan_container'>
+    <view class='chuang'>
+        <view class='megssage'>
+            <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})"></button>
+            <open-data class='user_name' type="userNickName" lang="zh_CN"></open-data>
+            <text class='publish' bindtap='ToPublish'>发表圈子</text>
+        </view>
+        <image class='pic' src='/images/quan_bgp.png'></image>
+    </view>
+    <!-- 圈子内容 -->
+    <block wx:for="{{quan_data}}" wx:key="id_2">
+        <view class='quan_box'>
+            <view class='message_1'>
+                <!-- 头像信息 -->
+                <view class='message'>
+                    <image class='mpic_1' src='{{item.pic}}'></image>
+                    <text class='m_name'>{{item.name}}</text>
+                </view>
+                <!-- 圈子文字和图片 -->
+                <text class='m_content' wx:if="{{item.content==''?false:true}}">{{item.content}}</text>
+                <view class='m-pic'>
+                    <image bindtap='previewImage' data-index="{{index}}" mode="widthFix" src='{{item.mpic}}'></image>
+                </view>
+                <!-- 时间和点赞收藏 -->
+                <view class='m_tools'>
+                    <text class='time'>{{item.time}}</text>
+                    <view class='before'>
+                        <image wx:if="{{item.zanst==0}}" class='zan_pic' src='/images/zan.png' bindtap='select_zan' data-index='{{index}}'></image>
+                        <image class='zans_pic' src='/images/zans.png' data-index='{{index}}' bindtap='select_zan' wx:else></image>
+                    </view>
+                    <!-- <image class='comment-pic' src='/images/comment.png' bindtap='comment'></image> -->
+                    <view class='after'>
+                        <image wx:if="{{item.like==0}}" class='like' src='/images/like.png' bindtap='select' data-index='{{index}}'></image>
+                        <image class='likes' src='/images/likes.png' data-index='{{index}}' bindtap='select' wx:else></image>
+                    </view>
+                </view>
+                <!-- 评论 -->
+                <view class='comment' data-index="{{index}}">
+                    <!-- <image class='cmt_pic' src='{{cmt_pic}}'></image> -->
+                    <text class='cmt_name'>{{cmt_name}}</text>
+                    <input  type='text' class='cmt_con' >{{cmt_con}}</input>
+                    <input type='text'  bindconfirm='comment' confirm-type="发表" class='input_cmt' placeholder="评论"></input>
+                    <!-- <text class='comment_user'>{{comment_user}}</text>
+            <text>哈哈哈，真好~</text> -->
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
